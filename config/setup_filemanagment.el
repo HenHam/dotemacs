@@ -9,6 +9,13 @@
 (set-selection-coding-system 'utf-8)
 (prefer-coding-system 'utf-8)
 
+;;
+;; Backup-/Lock-Files and Autosave
+;;
+(setq make-backup-files nil)
+(setq auto-save-default nil)
+(setq create-lockfiles nil)
+
 
 ;;
 ;; File-Explorer
