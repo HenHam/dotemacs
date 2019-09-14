@@ -45,6 +45,6 @@
 (require 'setup_filemanagment)
 (require 'setup_version-control)
 
-
+(require 'lang_clojure)
 
 (provide 'main_config)
