@@ -29,6 +29,34 @@
 
 
 ;;
+;; Textcompletion
+;;
+(use-package
+  company
+  :diminish (company-mode eldoc-mode)
+  :hook
+  ((prog-mode . company-mode))
+  
+  :config
+  (setq company-tooltip-align-annotations t)
+  ;; How long should company wait after a keystroke to display
+  (setq company-idle-delay 0.15)
+
+  ;; How many characters should be written before company is displayed?
+  (setq company-minimum-prefix-length 1))
+
+;; XXX :hook (cider-repl-mode . company-mode)
+
+(use-package
+  company-quickhelp
+  :after company
+  :hook
+  ((prog-mode . company-quickhelp-mode)
+   )
+  :config (setq company-quickhelp-delay 0.2))
+;; XXX :hook (cider-repl-mode . company-quickhelp-mode) 
+
+;;
 ;; Paredit ...
 ;;
 (use-package
