@@ -13,7 +13,12 @@
 (setq-default truncate-lines t)
 
 ;;
-;; expand region
+;; Higlighting
+;;
+(global-hl-line-mode 1) ; Highlighting line
+
+;;
+;; Expand region
 ;;
 (use-package
   expand-region
