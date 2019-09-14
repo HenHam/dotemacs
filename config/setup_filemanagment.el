@@ -17,6 +17,30 @@
 (setq create-lockfiles nil)
 
 
+
+;;
+;; Projectile
+;;
+(use-package
+  counsel-projectile
+
+  :config
+  (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
+  
+  (setq
+   projectile-completion-system 'ivy
+   projectile-file-exists-remote-cache-expire 300
+   projectile-file-exists-local-cache-expire nil
+   projectile-enable-idle-timer t
+   projectile-mode-line-prefix " ")
+  (counsel-projectile-mode)
+  (add-to-list 'projectile-globally-ignored-directories "node_modules")
+  (add-to-list 'projectile-globally-ignored-directories "dist")
+  (add-to-list 'projectile-globally-ignored-directories "elpa")
+  (add-to-list 'projectile-globally-ignored-directories "cache")
+  (add-to-list 'projectile-globally-ignored-directories ".cache")
+  )
+
 ;;
 ;; File-Explorer
 ;;
