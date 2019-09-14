@@ -7,6 +7,10 @@
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
 
+;; open in fullscreen
+(custom-set-variables
+ '(initial-frame-alist (quote ((fullscreen . maximized)))))
+
 ;;
 ;; mode-line
 ;;
