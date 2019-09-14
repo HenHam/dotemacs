@@ -81,5 +81,24 @@
 
   )
 
+;;
+;; Navigation
+;;
+(use-package
+  highlight-symbol
+
+  :hook
+  ((prog-mode . highlight-symbol-mode))
+  
+  :config
+  (add-hook 'prog-mode-hook 'highlight-symbol-mode)
+  (setq highlight-symbol-on-navigation-p t)
+  (setq highlight-symbol-idle-delay 0.8)
+
+  :bind
+  (("M-n" . highlight-symbol-next)
+   ("M-p" . highlight-symbol-prev)))
+
+;; XXX :hook (cider-repl-mode . highlight-symbol-mode) 
 
 (provide 'setup_prog-mode)
