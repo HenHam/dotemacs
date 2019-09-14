@@ -1,8 +1,22 @@
+;;
+;; Indent
+;;
+(use-package
+  aggressive-indent
+  
+  :hook (prog-mode . aggressive-indent-mode))
+
+;;
+;; line numbers
+;;
 (use-package
   linum
   :hook (prog-mode . linum-mode)
   :config (setq linum-format "%3d"))
 
+;;
+;; delimiter
+;;
 (use-package
   rainbow-delimiters
   :hook
