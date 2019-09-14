@@ -32,12 +32,13 @@
 ;; =============================================================================
 ;; Requires
 ;; =============================================================================
-;; Basics
+
 (require 'use-package)
 (require 'setup_use-package)
 
 
 (require 'setup_emacs)
+(require 'setup_editor-functions)
 
 (require 'setup_filemanagment)
 (require 'setup_version-control)
