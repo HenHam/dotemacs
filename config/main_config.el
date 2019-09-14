@@ -38,7 +38,9 @@
 
 
 (require 'setup_emacs)
+
 (require 'setup_editor-functions)
+(require 'setup_prog-mode)
 
 (require 'setup_filemanagment)
 (require 'setup_version-control)
