@@ -37,6 +37,8 @@
 (require 'setup_use-package)
 
 
+(require 'setup_emacs)
+
 (require 'setup_filemanagment)
 (require 'setup_version-control)
 
