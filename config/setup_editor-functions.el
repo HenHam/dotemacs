@@ -30,4 +30,12 @@
    ("C-," . er/contract-region))
   )
 
+;;
+;; Multiple Cursors
+;;
+(use-package
+  multiple-cursors
+
+  :ensure t)
+
 (provide 'setup_editor-functions)

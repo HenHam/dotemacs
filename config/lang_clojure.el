@@ -17,4 +17,12 @@
    ("\\.cljs\\'" . clojure-mode))
   )
 
+(use-package
+  cider
+
+  :ensure t
+
+  :after clojure-mode
+  )
+
 (provide 'lang_clojure)

@@ -1,3 +1,9 @@
+;;
+;; Environment
+;;
+(add-to-list 'exec-path "/usr/bin")
+(add-to-list 'exec-path "/usr/local/bin")
+
 ;; =============================================================================
 ;; Package basic installation
 ;; =============================================================================
@@ -38,6 +44,7 @@
 
 
 (require 'setup_emacs)
+(require 'setup_emacs-interface)
 
 (require 'setup_editor-functions)
 (require 'setup_prog-mode)
