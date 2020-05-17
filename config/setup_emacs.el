@@ -17,5 +17,12 @@
 (column-number-mode 1)
 
 
+;;
+;; keyboard setting
+;;
+(setq mac-command-modifier 'meta
+      mac-option-modifier 'none
+      default-input-method "MacOSX")
+
 
 (provide 'setup_emacs)
