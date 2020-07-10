@@ -1,5 +1,16 @@
 ;;
-;; 
+;; navigate windows/frames
+;;
+(use-package
+  winum
+
+  :ensure t
+  
+  :config
+  (winum-mode))
+
+;;
+;; Ido
 ;;
 (use-package
   ido-completing-read+
@@ -12,8 +23,7 @@
 (use-package
   ido
 
-  :ensure
-  t
+  :ensure t
 
   :requires
   (ido-completing-read+ crm-custom)
@@ -41,6 +51,9 @@
   :config
   (ido-vertical-mode 1))
 
+;;
+;; smex
+;;
 (use-package
   smex
   
