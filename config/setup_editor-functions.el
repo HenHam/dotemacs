@@ -13,6 +13,11 @@
 (setq-default truncate-lines t)
 
 ;;
+;; mode-line
+;;
+(column-number-mode 1)
+
+;;
 ;; Higlighting
 ;;
 (global-hl-line-mode 1) ; Highlighting line
