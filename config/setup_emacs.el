@@ -14,9 +14,10 @@
 ;;
 ;; keyboard setting
 ;;
-(setq mac-command-modifier 'meta
-      mac-option-modifier 'none
-      default-input-method "MacOSX")
+(cond ((eq system-type 'darwin)
+       (setq mac-command-modifier 'meta
+             mac-option-modifier 'none
+             default-input-method "MacOSX")))
 
 
 (provide 'setup_emacs)
