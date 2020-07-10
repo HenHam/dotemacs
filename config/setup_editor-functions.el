@@ -17,6 +17,9 @@
 ;;
 (global-hl-line-mode 1) ; Highlighting line
 
+(show-paren-mode 1) ;highlight brackets
+(setq show-paren-style 'expression)
+
 ;;
 ;; Expand region
 ;;
