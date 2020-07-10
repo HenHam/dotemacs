@@ -12,17 +12,12 @@
  '(initial-frame-alist (quote ((fullscreen . maximized)))))
 
 ;;
-;; mode-line
-;;
-(column-number-mode 1)
-
-
-;;
 ;; keyboard setting
 ;;
-(setq mac-command-modifier 'meta
-      mac-option-modifier 'none
-      default-input-method "MacOSX")
+(cond ((eq system-type 'darwin)
+       (setq mac-command-modifier 'meta
+             mac-option-modifier 'none
+             default-input-method "MacOSX")))
 
 
 (provide 'setup_emacs)
