@@ -52,6 +52,8 @@
 (require 'setup_filemanagment)
 (require 'setup_version-control)
 
+(require 'data_modes)
+
 (require 'lang_clojure)
 
 (provide 'main_config)
